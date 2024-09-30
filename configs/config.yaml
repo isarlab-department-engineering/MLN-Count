@@ -1,0 +1,50 @@
+#Paths
+data_root: '../../WS'
+log_path: '../../MLN-Count/runs'
+
+# Train config
+is_train: False # False/True
+resume_train: False # set as True if you want to continue the training from the last checkpoint
+start_epoch: 0 # Epoch at which training starts. If resume_train is True, it should be set to the epoch that refers to the desired checkpoint
+exp_name: MLN-Count # Set an experiment name, a new folder will be created into runs
+random_seed: 409
+init_lr: 0.01
+max_epochs: 401
+batch_size: 24
+lr_decay_iters: 10
+lr_step_gamma: 0.5 # multiply by lr_step_gamma every lr_decay_iters iterations
+early_stopping: True
+patience_epochs: 30
+
+# Val and Test config
+which_epoch: best # checkpoint epoch or 'best'
+
+# validation grid search
+min_r: 5
+max_r: 10
+step_r: 1
+min_thp: 5
+max_thp: 20
+step_thp: 1
+
+# if Tri-Cluster Local Maxima Detector
+TC-LMD: False
+content_score_th: 0.2
+radius: 38
+th_strategy: mean # mean/min
+# else
+r: 38
+thp: 7
+
+save_heatmaps: False #True/False
+# on original samples:
+save_detections: False #True/False
+
+# Misc
+print_freq: 1
+print_hist_freq: 100
+save_epoch_freq: 20
+val_epoch_freq: 1
+num_workers: 0
+gpu_id: 0
+
