@@ -80,15 +80,15 @@ Datasets should be in PascalVOC format, avoiding the 'Main' folder.
     ├── Dataset Directory/
     │   └── Devkit/
     │       ├── NumericAnnotations/
-    │       │   ├── validation.csv/
-    │       │   └── test.csv/
+    │       │   ├── validation.csv
+    │       │   └── test.csv
     │       ├── BinaryAnnotations/
-    │       │   ├── validation.csv/
-    │       │   └── test.csv/
+    │       │   ├── train.csv
+    │       │   └── validation.csv
     │       ├── ImageSets/
-    │       │   ├── train.txt/
-    │       │   ├── train.txt/
-    │       │   └── test.txt/
+    │       │   ├── train.txt
+    │       │   ├── train.txt
+    │       │   └── test.txt
     │       └── JPEGImages/
 
 
