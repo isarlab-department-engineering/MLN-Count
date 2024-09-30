@@ -27,7 +27,7 @@
 </div>
 
 For each input image _I<sub>i</sub>_ the optimization module, marked in yellow, computes the
-final quartet of outputs from the network. Three local feature (_LF_) vectors, denoted as _F<sub>1/1</sub>_, _Fb>1/2</sub>_, and _F<sub>1/4</sub>_, and a _GF_ vector represented by _F<sub>g</sub>_ . During the
+final quartet of outputs from the network. Three local feature (_LF_) vectors, denoted as _F<sub>1/1</sub>_, _F<sub>1/2</sub>_, and _F<sub>1/4</sub>_, and a _GF_ vector represented by _F<sub>g</sub>_ . During the
 training phase, the _LF_ vectors and the _GF_ vector are summed up and channeled into three discrete LTPA modules, identified as _F<sub>a1</sub>_, _F<sub>a2</sub>_, and _F<sub>a3</sub>_. The resulting
 _GD_ vectors _G<sub>1/1</sub>_, _G<sub>1/2</sub>_, and _G<sub>1/4</sub>_ are concatenated (orange layer) to form the vector _V<sub>c</sub>_ that is finally inputted into the fully connected layer _F<sub>c</sub>_, which outputs the
 classification score _$\hat{l}$<sub>i</sub>_. In the inference phase, _F<sub>g</sub>_ is multiplied by the compatibility score map _c<sub>1/1</sub>_, procured from the _F<sub>a1</sub>_ LTPA module. The resulting activation
